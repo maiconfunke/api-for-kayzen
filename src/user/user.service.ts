@@ -12,7 +12,7 @@ export class UserService {
       ) {}
     
       async getUsers(): Promise<User[]> {
-        return await this.usersRepository.find();
+        return this.usersRepository.find();
       }
     
       async getUser(id: number): Promise<User | undefined> {
