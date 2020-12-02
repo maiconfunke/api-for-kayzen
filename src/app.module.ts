@@ -11,11 +11,11 @@ import { UserModule } from './user/user.module';
     UserModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: '4funq.com.br',
+      host: 'localhost',
       port: 3306,
-      username: 'funke',
-      password: 'rootroot',
-      database: 'kayzen',
+      username: 'root',
+      password: 'root',
+      database: 'db',
       entities: [User, Photo],
       synchronize: true,
     })
